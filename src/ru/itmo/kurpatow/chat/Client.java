@@ -7,17 +7,15 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
-import java.util.Scanner;
 
 public class Client {
     private final int port;
     private final String ip;
-    BufferedReader reader;
+    private BufferedReader reader;
 
     public Client(int port, String ip) {
         this.port = port;
         this.ip = ip;
-        Scanner scanner = new Scanner(System.in);
     }
 
     public void start() throws Exception {
